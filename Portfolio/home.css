@@ -19,9 +19,6 @@
     justify-content: center;
 }
 #animation {
-    text-align: center;
-    overflow: hidden;
-    white-space: nowrap;
      color: orange;
      font-weight: bold;
     animation: typing 3s steps(15) 2;

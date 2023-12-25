@@ -1,0 +1,90 @@
+#home {
+    background-image: url('pictures/background.jpg');
+    background-position: center;
+    background-size: cover; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#home-item {
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#animation {
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+     color: orange;
+     font-weight: bold;
+    animation: typing 3s steps(15) 2;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+#home-detail,
+#profile {
+    width: 50%;
+    margin: 2% 2%;
+}
+
+.icon-facebook:hover {
+    fill: blue;
+}
+
+.icon-github:hover {
+    fill: green;
+}
+
+.icon-instagram:hover {
+    fill: rgb(210, 83, 125);
+}
+
+.icon-linkedin:hover {
+    fill: blue;
+}
+#profile  img{
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 780px) {
+    #home {
+        height: auto;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #home-item {
+        flex-direction: column;
+    }
+
+    #home-detail,
+    #profile {
+        margin: 0% 2% 0% 2%;
+    }
+    #profile  img{
+        width: 150px;
+        height: 150px;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+}
+
+

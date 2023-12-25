@@ -1,0 +1,180 @@
+#contact{
+    
+    background-repeat:no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lavender;
+}
+
+#resume {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.resume-item {
+  width: 45%;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.resume-iframe {
+  width: 100%;
+  height: 300px; /* Adjust the height as needed */
+}
+
+.download-link {
+  display: block;
+  margin-top: 10px;
+  font-size: larger;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .resume-item {
+    width: 100%;
+  }
+}
+#resume1{
+  transition: transform 0.1s ease-in-out;
+}
+#resume2{
+  transition: transform 0.1s ease-in-out;
+}
+#resume1:hover{
+transform: scale(1.5);
+z-index: 2;
+}
+#resume2:hover{
+transform: scale(1.5);
+z-index: 2;
+}
+
+  #body {
+  background: url("/uploads/media/default/0001/01/b5edc1bad4dc8c20291c8394527cb2c5b43ee13c.jpeg") no-repeat center;
+  background-size: cover;
+  margin: 5px;
+  }
+  .form-h {
+  text-transform: uppercase;
+  }
+  .form-h {
+  margin: 0 0 0 8px;
+  font-weight: bold;
+  }
+  .main-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 25px;
+  background: rgba(59, 59, 59, 0.5); 
+  }
+  .left-part, form {
+  padding: 25px;
+  }
+  .left-part {
+  text-align: center;
+  }
+  .fa-graduation-cap {
+  font-size: 72px;
+  }
+  form {
+  background: rgba(52, 50, 50, 0.7); 
+  }
+  .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  }
+  .info {
+  display: flex;
+  flex-direction: column;
+  }
+  .info input {
+  padding: 5px;
+  margin-bottom: 30px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #eee;
+  }
+  .info input::placeholder {
+  color: #eee;
+  }
+  
+  form button {
+  padding: 10px 5px;
+  margin-top: 20px;
+  border-radius: 5px; 
+  border: none;
+  background: #26a9e0; 
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  }
+  .btn-item {
+    color: black;
+  display: inline-block;
+  margin: 0px 5px 0;
+  }
+  .btn-item:hover{
+    color: blue;
+  }
+ form button {
+  width: 100%;
+  }
+   form button:hover {
+  background: #85d6de;
+  }
+  @media (min-width: 568px) {
+   #body {
+  height: 100%;
+  }
+  .main-block {
+  flex-direction: row;
+  height: calc(100% - 50px);
+  }
+  .left-part, form {
+  flex: 1;
+  height: auto;
+  }
+  }
+
+  #footer {
+    text-align: center;
+    background-color: gray;
+    padding: 20px; 
+  }
+  
+  #footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px; /* Adjust the font size as needed for normal screens */
+  }
+  
+  /* Media Query for Small Screens */
+  @media screen and (max-width: 600px) {
+    #footer a {
+      font-size: 16px; /* Adjust the font size as needed for small screens */
+    }
+  }
+  
+  /* Media Query for Medium Screens */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    #footer a {
+      font-size: 17px; /* Adjust the font size as needed for medium screens */
+    }
+  }
+  
+  /* Add more media queries as needed for different screen sizes */
+  
+  
+  

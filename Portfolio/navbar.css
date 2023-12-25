@@ -1,0 +1,83 @@
+.navbar {
+    width: 100%;
+    background-color: lavender;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #0b0a0a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+   
+}
+
+.navbar a:hover {
+    background-color: #626060;
+    color: black;
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+.toggle-btn {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    
+    .navbar a:not(:first-child) {display: none;}
+    
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+
+    .toggle-btn {
+        display: block;
+       float: right;
+       text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: #f2f2f2;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: fixed;
+    }
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .toggle-btn {
+        margin-left: 45%;
+        margin-right: 48%;
+        display: none;
+    }
+}

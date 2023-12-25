@@ -1,0 +1,68 @@
+#skill {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#skill h1 {
+    text-align: center;
+    color: #080808;
+}
+
+#skill-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+
+.programming-skill {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-detail {
+    text-align: center;
+    margin: 10px;
+    width: 150px;
+    background-color: lavender;
+    transition: transform 0.1s;
+}
+.skill-detail:hover{
+    transform: scale(1.1);
+}
+
+.skill-detail img {
+    width: 100px;
+    height:100px;
+    border-radius: 70%;
+    margin-bottom: 10px;
+    max-width: 100%;
+
+}
+
+@media only screen and (max-width: 600px) {
+    #skill {
+        padding: 10px;
+    }
+
+    .skill-detail {
+        width: 100%;
+    }
+
+    .skill-detail img {
+        width: 80px;
+        height: 80px;
+    }
+}
